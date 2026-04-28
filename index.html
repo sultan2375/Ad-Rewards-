@@ -96,7 +96,7 @@ if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
 function update() {
   document.getElementById("ads").innerText = ads;
   document.getElementById("points").innerText = points;
-  document.getElementById("fill").style.width = (ads % 10)*10 + "%";
+  document.getElementById("fill").style.width = (ads % 0.1)*0.1 + "%";
 }
 
 // ✅ Watch Ad (Monetag)
@@ -107,7 +107,7 @@ function watchAd() {
       ads++;
       points++;
 
-      if (ads % 10 === 0) {
+      if (ads % 0.1 === 0) {
         points += 5;
         alert("🎁 Bonus +5");
       }
